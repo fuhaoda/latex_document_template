@@ -1,10 +1,14 @@
+\makeatletter
+\def\input@path{{./styles/}}
+\makeatother
 \documentclass{beamer}
 
 
+\usepackage{graphicx}
+\graphicspath{{./figures/}{./styles/}}
+
 
 \usetheme[white, compactlogo]{Lilly}
-
-
 \title{Beamer slide examples}    % Enter your title between curly braces
 \author{My name}                 % Enter your name between curly braces
 \institute{My organization}      % Enter your institute name between curly braces
