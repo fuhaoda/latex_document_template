@@ -1,0 +1,158 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{rotating}
+\usepackage{graphics}
+\usepackage{epstopdf}
+\usepackage{pdfsync}
+\usepackage{natbib}
+\usepackage{caption}
+\textheight 9.2 in \textwidth 6.4 in
+\topmargin -0.15 in       % for PC
+\topmargin -0.7 in       % for Unix
+\oddsidemargin 0.10in %\evensidemargin 0.0in
+\parskip=.00in
+\renewcommand{\baselinestretch} {1.2}
+\makeatletter \setcounter{page}{1}
+\def\singlespace{\def\baselinestretch{1}\@normalsize}
+\def\endsinglespace{}
+
+\@addtoreset{equation}{section}
+\renewcommand{\theequation} {\arabic{section}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newcommand{\distas}[1]{\mathbin{\overset{#1}{\kern\z@\sim}}}%
+
+
+% begin definition
+\def\conas{\stackrel{a.s.} {\rightarrow}}         % conv. a.s.
+\def\conP{\stackrel{\cal P} {\rightarrow}}        % conv. in probability
+\def\conD{\stackrel{\cal D} {\rightsquigarrow}}        % conv. in distribution
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\minimize}{minimize\quad}
+\DeclareMathOperator*{\maximize}{maximize\quad}
+\DeclareMathOperator{\E}{\mathbb{E}} % Expectation
+
+
+\def\iid{\stackrel{ iid} {\sim}}          % i.i.d
+\def\hat{\widehat}
+\def\tilde{\widetilde}
+
+%general sets
+\def\cal{\mathcal}
+\def\calA{{\mathcal A}} %Action sets
+\def\calB{{\mathcal B}} %Bounded set
+\def\calC{{\mathcal C}} %Convex set
+\def\calH{{\mathcal H}} %Hilbert Space
+\def\calS{{\mathcal S}} %A regular set
+\def\calNr{{\mathcal N}_r} %Neighborhood
+\def\calX{{\mathcal X}} %Covariate space
+\def\calF{{\mathcal F}} %Function space
+\def\calN{{\mathcal N}} %Normal distribution
+
+
+%special sets
+\def\bbR{{\mathbb{R}}} %Real number
+\def\bbN{{\mathbb{N}}}%Natural number
+\def\bbQ{{\mathbb{Q}}} %Rational number
+\def\bbZ{{\mathbb{Z}}} %Integer
+
+%Matrix
+\def\bA{{\mathbf A}}
+\def\bB{{\mathbf B}}
+\def\bC{{\mathbf C}}
+\def\bD{{\mathbf D}}
+\def\bH{{\mathbf H}}
+\def\bI{{\mathbf I}}
+\def\bJ{{\mathbf J}}
+\def\bP{{\mathbf P}}
+\def\bT{{\mathbf T}}
+\def\bW{{\mathbf W}}
+\def\bX{{\mathbf X}}
+
+%vector
+\def\balpha{{\boldsymbol \alpha}}
+\def\bbeta{{\boldsymbol \beta}}
+\def\btheta{{\boldsymbol \theta}}
+
+\def\bzero{{\bf 0}}
+\def\bone{{\bf 1}}
+\def\bbf{{\bf f}}
+\def\br{{\bf r}}
+\def\by{{\bf y}}
+
+%notations
+\def\sign{{\mathrm{sign}}}
+\def\var{{\mathrm{var}}}
+\def\cov{{\mathrm{cov}}}
+\def\ind{\perp\!\!\!\perp}
+
+%others
+\def\mif{\mathrm{if}\ }
+\def\ow{\mathrm{otherwise}\ }
+\def\st{\mathrm{subject\ to}\quad }
+\def\diag{\mathrm{diag}}
+%\def\minimize{\mathrm{minimize}\quad }
+%\def\maximize{\mathrm{maximize}\quad }
+\def\dom{{\rm dom}}
+
+
+
+\begin{document}
+\title
+{\bf ****}
+\author
+{
+*** *** \\
+%Eli Lilly and Company \\
+%Indianapolis, IN, 46285 \\
+%\textsl{FU\_HAODA@stat.wisc.edu}
+}
+\date{\today}
+\maketitle
+\begin{abstract}
+
+\end{abstract}
+
+\noindent {\bf Key words and Phrases}: *** ***.
+
+\noindent {\bf Short title}: ***
+\section{Introduction}
+
+
+
+
+
+	
+
+% \cite{Shao2003}
+\subsection{Why important}
+
+\setcounter{equation}{0}
+\renewcommand{\theequation} {A.\arabic{equation}}
+\begin{center}
+\bf \Large Appendix A: ***
+\end{center}
+
+
+
+
+\bibliographystyle{/Users/c082213/BoxSync/Help/References/asa_HD}
+\bibliography{/Users/c082213/BoxSync/Help/References/MyStats}
+
+
+
+
+\end{document}}

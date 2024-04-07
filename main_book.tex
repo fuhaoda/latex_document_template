@@ -1,0 +1,104 @@
+
+\documentclass[12pt,reqno]{book}      % Sets 12pt font, equation numbers on right
+\usepackage{amsmath,amssymb,amsfonts} % Typical maths resource packages
+\usepackage{graphics}                 % Packages to allow inclusion of graphics
+\usepackage{color}                    % For creating coloured text and background
+
+\usepackage[colorlinks,citecolor=blue,linkcolor=blue]{hyperref}                 % For creating hyperlinks in cross references. It should be after the color package. The option colorlinks produces colored entries without boxes. The option citecolor=blue changes the default green citations to blue.
+
+\DeclareGraphicsExtensions{.pdf}
+\parindent 1cm
+\parskip 0.2cm
+\topmargin 0.2cm
+\oddsidemargin 1cm
+\evensidemargin 0.5cm
+\textwidth 15cm
+\textheight 21cm
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+
+
+\def\R{\mathbb{ R}}
+\def\S{\mathbb{ S}}
+\def\I{\mathbb{ I}}
+\makeindex
+
+
+\title{A \LaTeX \ Book Skeleton  }
+
+\author{\htmladdnormallink           % Puts a hyperlink on to the author's name
+{CTJ Dodson}{http://www.maths.manchester.ac.uk/~kd/homepage/}
+{\small\em \copyright 2015 }}
+
+ \date{ }
+     \usepackage{draftwatermark}                   %%%   These four lines
+       \SetWatermarkText{Draft not for circulation}   %%%   put a watermark
+        \SetWatermarkScale{3}                          %%%  on all pages. Just omit them if 
+         \SetWatermarkColor[rgb]{0.9,0,0}               %%%  it is not needed.
+\begin{document}
+\maketitle
+ \addcontentsline{toc}{chapter}{Contents}
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+\chapter*{Preface}\normalsize
+  \addcontentsline{toc}{chapter}{Preface}
+\pagestyle{plain}
+The book root file {\tt bookex.tex} gives a basic example of how to
+use \LaTeX \ for preparation of a book. Note that all
+\LaTeX \ commands begin with a
+backslash.
+
+Each
+Chapter, Appendix and the Index is made as a {\tt *.tex} file and is
+called in by the {\tt include} command---thus {\tt ch1.tex} is
+the name here of the file containing Chapter~1. The inclusion of any
+particular file can be suppressed by prefixing the line by a
+percent sign.
+
+
+ Do not put an {\tt end{document}} command at the end of chapter files;
+just one such command is needed at the end of the book.
+
+Note the tag used to make an index entry. You may need to consult eg Lamport's
+book~\cite{lamport} % Gives link to reference
+for details of the procedure to make the index input
+file; \LaTeX \ will create a pre-index by listing all the tagged
+items in the file {\tt bookex.idx} then you edit this into
+a {\tt theindex} environment, as {\tt index.tex}.
+
+In the source file {\tt bookex.tex} the line:\\
+{\tt usepackage[colorlinks,citecolor=blue,linkcolor=blue]{hyperref} } \\
+includes hyperlinks and chooses colours for them.\\
+Also, the following lines just before 
+{\tt begin\{document\}}
+will put a watermark on every page:
+\begin{verbatim}
+  usepackage{draftwatermark}                 %%%   These four lines
+  SetWatermarkText{Draft not for circulation}%%%  put a watermark on all
+  SetWatermarkScale{3}                       %%%  pages. Omit them if
+  SetWatermarkColor[rgb]{0.9,0,0}            %%%  it is not needed.
+\end{verbatim}         
+Just comment them out with \% if you do not want a watermark. 
+
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+\include{ch1}
+\include{ch2}
+
+\begin{thebibliography}{99}
+  \addcontentsline{toc}{chapter}{Bibliography}
+\bibitem{lamport} L. Lamport. {\bf \LaTeX \ A Document Preparation System}
+Addison-Wesley, California 1986.
+\end{thebibliography}
+
+\include{index}
+ \addcontentsline{toc}{chapter}{Index}
+\end{document}
