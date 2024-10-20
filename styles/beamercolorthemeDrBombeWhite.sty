@@ -1,0 +1,60 @@
+\ProvidesPackage{beamercolorthemeDrBombeWhite}
+
+\mode<presentation>
+
+% Softer, more pleasant colors
+\definecolor{EmphColor}{RGB}{128,0,32}          % Deep maroon
+\definecolor{HighlightBackground}{RGB}{255,253,208}  % Pale cream (soft yellow)
+\definecolor{KeywordColor}{RGB}{0,77,102}       % Deep teal
+
+\definecolor{MyFav}{RGB}{38,70,83}
+
+\definecolor{MyMediumGray}{RGB}{189,189,189}    % Softer medium gray
+\definecolor{MyRed}{RGB}{209,61,76}             % Soft red
+\definecolor{MyRed75}{RGB}{235,120,120}         % Light red, muted
+\definecolor{MyRed50}{RGB}{245,175,175}         % Softer light red
+\definecolor{MyRed25}{RGB}{253,220,220}         % Very light pinkish-red
+
+\definecolor{MyGreen}{RGB}{83,158,117}          % Soft green
+\definecolor{MyGreen75}{RGB}{120,196,155}       % Light green
+\definecolor{MyGreen50}{RGB}{168,221,193}       % Pale green
+\definecolor{MyGreen25}{RGB}{212,240,224}       % Very light green
+
+\definecolor{MyBlue}{RGB}{91,155,213}           % Soft blue (calming)
+\definecolor{MyBlue75}{RGB}{142,185,231}        % Light sky blue
+\definecolor{MyBlue50}{RGB}{187,209,240}        % Pale blue
+\definecolor{MyBlue25}{RGB}{223,234,249}        % Very light blue
+
+\definecolor{MyPurple}{RGB}{150,111,214}        % Soft lavender
+\definecolor{MyPurple75}{RGB}{189,157,225}      % Light lavender
+\definecolor{MyPurple50}{RGB}{214,189,236}      % Pale lavender
+\definecolor{MyPurple25}{RGB}{237,220,245}      % Very light purple
+
+\setbeamercolor*{section text}{fg=white!80!gray}
+
+\setbeamercolor{item projected}{bg=MyFav}
+\setbeamercolor{itemize item}{fg=MyFav}
+\setbeamercolor{itemize subitem}{fg=MyMediumGray}
+\setbeamercolor{description item}{fg=MyFav}
+\setbeamercolor{enumerate item}{fg=MyFav}
+\setbeamercolor{enumerate subitem}{fg=MyMediumGray}
+
+\setbeamercolor{palette secondary}{fg=white,bg=MyFav}
+\setbeamercolor{palette tertiary}{fg=white,bg=MyMediumGray}   % Changed fg to white for consistency
+\setbeamercolor{palette quaternary}{fg=white,bg=MyFav}
+
+\setbeamercolor{titlelike}{parent=palette secondary}
+
+\setbeamercolor{block title}{parent=palette secondary}
+\setbeamercolor{block title alerted}{use=alerted text,fg=MyRed,bg=alerted text.fg}
+\setbeamercolor{block title example}{use=example text,fg=MyGreen,bg=example text.fg}
+
+\setbeamercolor{sidebar}{bg=MyMediumGray}
+\setbeamercolor{palette sidebar primary}{fg=white}
+\setbeamercolor{palette sidebar secondary}{fg=MyMediumGray}
+
+\setbeamercolor*{separation line}{bg=MyMediumGray}
+\setbeamercolor*{fine separation line}{bg=MyMediumGray}
+
+\mode
+<all>
