@@ -1,4 +1,4 @@
-\documentclass[12pt,twoside]{book}
+\documentclass[12pt, twoside]{book}
 
 \usepackage{graphicx}
 \graphicspath{{./figures/}}
@@ -188,12 +188,29 @@
 \maketitle
 
 \frontmatter
-\chapter*{Preface}
-\addcontentsline{toc}{chapter}{Preface}
-This is the preface of the book. Here, you can describe the motivation behind the work, thank those who helped, and provide context for the reader.
+
+% Dedication page
+\clearpage
+\thispagestyle{empty} % Remove header/footer
+\vspace*{\stretch{1}} % Push content toward the middle of the page
+\begin{center}
+    \emph{For my beloved family,\\[0.5em]
+    whose love and support inspire me every day.}
+\end{center}
+\vspace*{\stretch{2}}
+\clearpage
+
+
+\include{preface}
 
 \tableofcontents
 \mainmatter
+
+%\includeonly{chapter1}  % Only compile chapter1.tex
+%\include{chapter1} put those chapters in ./chapters/chatper1.tex
+%\include{chapter2}
+%\include{chapter3}
+
 \chapter{Cosmic Genesis: The Birth of the Universe}
 Introduction to the Big Bang and how the universe formed.
 
