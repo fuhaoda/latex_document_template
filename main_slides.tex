@@ -11,6 +11,148 @@
 \usetheme[white, compactlogo]{DrBombe}
 %\usetheme[white, compactlogo]{Amgen}
 
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+% Haoda's Math, Probability, Statistics, Optimization and Physics Notations
+%----------------------------------------
+% Convergence Notations
+%----------------------------------------
+\newcommand{\conas}{\stackrel{a.s.}{\rightarrow}}         % Convergence almost surely
+\newcommand{\conP}{\stackrel{\mathcal{P}}{\rightarrow}}    % Convergence in probability
+\newcommand{\conD}{\stackrel{\mathcal{D}}{\rightsquigarrow}} % Convergence in distribution
+\newcommand{\convLp}{\stackrel{L^p}{\rightarrow}}           % Convergence in L^p
+
+%----------------------------------------
+% Asymptotic Notations
+%----------------------------------------
+\newcommand{\Op}{\mathcal{O}_P}   % Big-O in probability
+\newcommand{\op}{o_P}             % Little-o in probability
+
+
+%----------------------------------------
+% Basic Calculus & Algebra
+%----------------------------------------
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}           % Absolute value
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}          % Norm
+\newcommand{\inner}[2]{\left\langle #1, #2 \right\rangle}   % Inner product
+\newcommand{\dd}{\,\mathrm{d}}                              % Differential d
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}        % Partial derivative, e.g. \pd{f(x,y)}{x} 
+\newcommand{\diff}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}   % Derivative
+
+%----------------------------------------
+% Optimization Operators
+%----------------------------------------
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\minimize}{minimize\quad}
+\DeclareMathOperator*{\maximize}{maximize\quad}
+
+%----------------------------------------
+% Expectation and Probability
+%----------------------------------------
+\DeclareMathOperator{\E}{\mathbb{E}}                       % Expectation
+\newcommand{\Prob}{\mathbb{P}}                             % Probability measure
+\newcommand{\iid}{\stackrel{\mathrm{iid}}{\sim}}           % i.i.d.
+\newcommand{\distas}[1]{\mathbin{\overset{#1}{\kern0pt\sim}}}% X \distas{d} \mathcal{N}(0,1).
+
+%----------------------------------------
+% Accent Shortcuts
+%----------------------------------------
+\let\oldhat\hat
+\renewcommand{\hat}{\widehat}  % Prefer wide hat for better appearance
+\let\oldtilde\tilde
+\renewcommand{\tilde}{\widetilde}  % Prefer wide tilde
+
+
+%----------------------------------------
+% Indicator Function
+%----------------------------------------
+\newcommand{\indfun}[1]{\mathbb{1}\{#1\}}
+
+%----------------------------------------
+% Distance Operator
+%----------------------------------------
+\DeclareMathOperator{\dist}{dist}
+
+%----------------------------------------
+% Quantum Mechanics / Physics (Bra–Ket Notation)
+%----------------------------------------
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\braket}[2]{\langle #1|#2\rangle}
+
+%----------------------------------------
+% General Sets
+%----------------------------------------
+\newcommand{\calA}{\mathcal{A}}    % Action sets
+\newcommand{\calB}{\mathcal{B}}    % Bounded set
+\newcommand{\calC}{\mathcal{C}}    % Convex set
+\newcommand{\calH}{\mathcal{H}}    % Hilbert Space
+\newcommand{\calS}{\mathcal{S}}    % A regular set
+\newcommand{\calNr}{\mathcal{N}_r} % Neighborhood
+\newcommand{\calX}{\mathcal{X}}    % Covariate space
+\newcommand{\calF}{\mathcal{F}}    % Function space
+\newcommand{\calN}{\mathcal{N}}    % Normal distribution
+
+% Optional shorthand for \mathcal (if desired)
+\newcommand{\mc}[1]{\mathcal{#1}}
+
+%----------------------------------------
+% Special Sets
+%----------------------------------------
+\newcommand{\bbR}{\mathbb{R}} % Real numbers
+\newcommand{\bbN}{\mathbb{N}} % Natural numbers
+\newcommand{\bbQ}{\mathbb{Q}} % Rational numbers
+\newcommand{\bbZ}{\mathbb{Z}} % Integers
+\newcommand{\bbC}{\mathbb{C}} % Complex numbers
+
+%----------------------------------------
+% Matrices
+%----------------------------------------
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bX}{\mathbf{X}}
+
+%----------------------------------------
+% Vectors
+%----------------------------------------
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\bzero}{\mathbf{0}}
+\newcommand{\bone}{\mathbf{1}}
+\newcommand{\bbf}{\mathbf{f}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\by}{\mathbf{y}}
+
+%----------------------------------------
+% Notations and Other Operators
+%----------------------------------------
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\cov}{cov}
+\newcommand{\ind}{\perp\!\!\!\perp}
+
+%----------------------------------------
+% Textual Commands in Math Mode
+%----------------------------------------
+\newcommand{\mif}{\ensuremath{\mathrm{if}\,}}
+\newcommand{\ow}{\ensuremath{\mathrm{otherwise}\,}}
+\newcommand{\st}{\ensuremath{\mathrm{subject\ to}\quad}}
+\DeclareMathOperator{\diag}{diag}
+\newcommand{\dom}{\operatorname{dom}}
+
+
 \title{Beamer slide examples}    % Enter your title between curly braces
 \author{My name}                 % Enter your name between curly braces
 \institute{My organization}      % Enter your institute name between curly braces
